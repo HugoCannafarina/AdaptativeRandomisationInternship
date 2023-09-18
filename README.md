@@ -5,7 +5,7 @@ List of R (version 4.2.3) packages required :	“openxlsx”, “dplyr”, “gg
 
 List of R scripts :
 -	beta.r : compute the required sample sizes for the simulations, as well as the coefficients necessary to simulate the outcome. The coefficients are stored in the file beta.rda.
--	gen_data.r : select the covariate associations to model in the NORTA method, and apply the method to generate the datasets for each scenario. The simulated datasets can be found in the source_data folder
+-	gen_data.r : select the covariate associations to model in the NORTA method, and apply the method to generate the datasets for each scenario. 
 -	res_cor_300.r / res_uncor_300.r / res_cor_820.r / res_uncor_820.r: apply the randomization algorithms to each dataset. Each script corresponds to one of the scenarios. Forking is used for parallel computing. Pierre L'Ecuyer's RngStreams is used to set a seed and ensure reproductibility. 
 -	final_analysis_cor_300 / final_analysis_uncor_300 / final_analysis_cor_820/ final_analysis_uncor_820 : final analysis of the generated data for each scenario.
 
